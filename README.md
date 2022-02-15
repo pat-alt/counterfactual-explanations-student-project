@@ -1,10 +1,3 @@
----
-bibliography: bib.bib
-format: gfm
-title: Endogenous model shifts in algorithmic recourse
-toc-title: Table of contents
----
-
 Responsible Professor: Dr. Cynthia Liem Supervisor: Patrick Altmeyer
 
 ## Background and motivation
