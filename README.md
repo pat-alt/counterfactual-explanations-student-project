@@ -1,6 +1,6 @@
 Responsible Professor: Dr. Cynthia Liem Supervisor: Patrick Altmeyer
 
-## Background and motivation
+### Background and motivation
 
 Algorithmic recourse is an approach towards not only explaining
 black-box machine learning algorithms, but provide subjects who have
@@ -59,7 +59,7 @@ yourself further with the topic and
 [CARLA](https://github.com/carla-recourse/CARLA) you should all read
 this [paper](https://arxiv.org/pdf/2108.00783.pdf).
 
-## Research Questions for the Sub-Projects
+### Research Questions for the Sub-Projects
 
 Collectively, students will discuss and agree on an answer to the
 following question:
@@ -69,9 +69,9 @@ following question:
 Individually, each of the students will then choose one of the recourse
 generators already implemented in
 [CARLA](https://github.com/carla-recourse/CARLA) and run a simple
-experiment (details below) to generate endogenous shifts and quantify
-their magnitude. You will also each produce results for the baseline
-generator
+experiment (details below) to generate endogenous shifts - that is,
+provide and implement recourse - and quantify their magnitude. You will
+also each produce results for the baseline generator
 ([Wachter](https://arxiv.org/ftp/arxiv/papers/1711/1711.00399.pdf)) and
 benchmark the results from both generators.
 
@@ -88,28 +88,6 @@ suggestions:
 5.  [AR-LIME](https://arxiv.org/pdf/1809.06514.pdf), (Ustun, Spangher,
     and Liu 2019)
 
-**Experiment**
-
-The idea is that you replicate a variation of the following experiement:
-
-1.  Train an algorithm ℳ for a binary classification task.
-2.  Determine a target class. Using your chosen generator and the
-    baseline generator
-    ([Wachter](https://arxiv.org/ftp/arxiv/papers/1711/1711.00399.pdf))
-    generate recourse for a share *μ* of randomly selected individuals
-    in the other class to revise their label (i.e. move to the target
-    class). Store some of the conventional benchmark measures readily
-    implemented in CARLA (cost, success rate, …)
-3.  Implement recourse for those indviduals and quantify the domain
-    shift.
-4.  Retrain ℳ and quantify the model shift.
-5.  Repeat steps 1-4 for *K* rounds.
-
-You are free to either follow this recipe exactly or tweak the various
-parameters that determine the experiemntal design as you see fit. Make
-sure that you end up running the exact same experiment though, in order
-for the results to be comparable.
-
 Use the results to answer the following questions with respect to your
 chosen generator:
 
@@ -123,27 +101,24 @@ While the individual part should really be done individually, do keep in
 mind that you will end up comparing the results of your experiments and
 you should therefore all generate the same, comparable output.
 
-## Prerequisites
+### Prerequisites
 
 For this assignment, prior experience is Python is a requirement. A
 basic understanding of gradient-based optimization is helpful, but not a
 strict requirement.
 
-## Planning of the research project
+### Q&A Session
 
-1.  kick-off meeting (Q3)
-2.  research proposal presentations + collective evaluation requirements
-    proposal (Q4 week 2)
-3.  go/no-go presentations + collective benchmark available (Q4 week 4)
-4.  deadline for receiving feedback on final draft (Q4 week 8)
+-   Tuesday, March 8, 12:45-13:25
+-   Wednesday, March 9, 12:45-13:25
 
-## References
+### References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-dhurandhar2018explanations" class="csl-entry">
 
-Dhurandhar, Amit, Pin-Yu Chen, Ronny Luss, Chun-Chen Tu, Paishun Ting,
+1. Dhurandhar, Amit, Pin-Yu Chen, Ronny Luss, Chun-Chen Tu, Paishun Ting,
 Karthikeyan Shanmugam, and Payel Das. 2018. “Explanations Based on the
 Missing: Towards Contrastive Explanations with Pertinent Negatives.”
 *Advances in Neural Information Processing Systems* 31.
@@ -152,7 +127,7 @@ Missing: Towards Contrastive Explanations with Pertinent Negatives.”
 
 <div id="ref-joshi2019towards" class="csl-entry">
 
-Joshi, Shalmali, Oluwasanmi Koyejo, Warut Vijitbenjaronk, Been Kim, and
+2. Joshi, Shalmali, Oluwasanmi Koyejo, Warut Vijitbenjaronk, Been Kim, and
 Joydeep Ghosh. 2019. “Towards Realistic Individual Recourse and
 Actionable Explanations in Black-Box Decision Making Systems.” *arXiv
 Preprint arXiv:1907.09615*.
@@ -161,7 +136,7 @@ Preprint arXiv:1907.09615*.
 
 <div id="ref-poyiadzi2020face" class="csl-entry">
 
-Poyiadzi, Rafael, Kacper Sokol, Raul Santos-Rodriguez, Tijl De Bie, and
+3. Poyiadzi, Rafael, Kacper Sokol, Raul Santos-Rodriguez, Tijl De Bie, and
 Peter Flach. 2020. “FACE: Feasible and Actionable Counterfactual
 Explanations.” In *Proceedings of the AAAI/ACM Conference on AI, Ethics,
 and Society*, 344–50.
@@ -170,7 +145,7 @@ and Society*, 344–50.
 
 <div id="ref-upadhyay2021towards" class="csl-entry">
 
-Upadhyay, Sohini, Shalmali Joshi, and Himabindu Lakkaraju. 2021.
+4. Upadhyay, Sohini, Shalmali Joshi, and Himabindu Lakkaraju. 2021.
 “Towards Robust and Reliable Algorithmic Recourse.” *arXiv Preprint
 arXiv:2102.13620*.
 
@@ -178,7 +153,7 @@ arXiv:2102.13620*.
 
 <div id="ref-ustun2019actionable" class="csl-entry">
 
-Ustun, Berk, Alexander Spangher, and Yang Liu. 2019. “Actionable
+5. Ustun, Berk, Alexander Spangher, and Yang Liu. 2019. “Actionable
 Recourse in Linear Classification.” In *Proceedings of the Conference on
 Fairness, Accountability, and Transparency*, 10–19.
 

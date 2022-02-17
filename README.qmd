@@ -7,7 +7,7 @@ bibliography: bib.bib
 Responsible Professor: Dr. Cynthia Liem
 Supervisor: Patrick Altmeyer
 
-## Background and motivation
+### Background and motivation
 
 Algorithmic recourse is an approach towards not only explaining black-box machine learning algorithms, but provide subjects 
 who have been adversely affected by such with a realistic set of actions they can take in order to revise their outcome. 
@@ -28,14 +28,13 @@ We think that endogenous shifts deserve attention for various reasons:
 
 For a gentle introduction to the topic of algorithmic recourse you can check out this [primer](https://towardsdatascience.com/individual-recourse-for-black-box-models-5e9ed1e4b4cc) written by Patrick as part of his PhD application. To familiarize yourself further with the topic and [CARLA](https://github.com/carla-recourse/CARLA) you should all read this [paper](https://arxiv.org/pdf/2108.00783.pdf).
 
-## Research Questions for the Sub-Projects
+### Research Questions for the Sub-Projects
 
 Collectively, students will discuss and agree on an answer to the following question:
 
 - How can we quantify endogenous domain and model shifts? 
 
-Individually, each of the students will then choose one of the recourse generators already implemented in [CARLA](https://github.com/carla-recourse/CARLA) and run a simple experiment (details below) to generate endogenous shifts and quantify their magnitude.
-You will also each produce results for the baseline generator ([Wachter](https://arxiv.org/ftp/arxiv/papers/1711/1711.00399.pdf)) and benchmark the results from both generators.
+Individually, each of the students will then choose one of the recourse generators already implemented in [CARLA](https://github.com/carla-recourse/CARLA) and run a simple experiment (details below) to generate endogenous shifts - that is, provide and implement recourse - and quantify their magnitude. You will also each produce results for the baseline generator ([Wachter](https://arxiv.org/ftp/arxiv/papers/1711/1711.00399.pdf)) and benchmark the results from both generators.
 
 You are free to choose any of the generators already implemented [CARLA](https://github.com/carla-recourse/CARLA), but below are five suggestions:
 
@@ -45,18 +44,6 @@ You are free to choose any of the generators already implemented [CARLA](https:/
 4. [CEM-VAE](https://arxiv.org/pdf/1802.07623.pdf), [@dhurandhar2018explanations]
 5. [AR-LIME](https://arxiv.org/pdf/1809.06514.pdf), [@ustun2019actionable]
 
-**Experiment**
-
-The idea is that you replicate a variation of the following experiement:
-
-1. Train an algorithm $\mathcal{M}$ for a binary classification task. 
-2. Determine a target class. Using your chosen generator and the baseline generator ([Wachter](https://arxiv.org/ftp/arxiv/papers/1711/1711.00399.pdf)) generate recourse for a share $\mu$ of randomly selected individuals in the other class to revise their label (i.e. move to the target class). Store some of the conventional benchmark measures readily implemented in CARLA (cost, success rate, ...)
-3. Implement recourse for those indviduals and quantify the domain shift.
-4. Retrain $\mathcal{M}$ and quantify the model shift.
-5. Repeat steps 1-4 for $K$ rounds. 
-
-You are free to either follow this recipe exactly or tweak the various parameters that determine the experiemntal design as you see fit. Make sure that you end up running the exact same experiment though, in order for the results to be comparable. 
-
 Use the results to answer the following questions with respect to your chosen generator:
 
 - Does the magnitude of induced model shifts differ compared to the baseline generator? 
@@ -65,15 +52,13 @@ Use the results to answer the following questions with respect to your chosen ge
 
 While the individual part should really be done individually, do keep in mind that you will end up comparing the results of your experiments and you should therefore all generate the same, comparable output.
 
-## Prerequisites
+### Prerequisites
 
 For this assignment, prior experience is Python is a requirement. A basic understanding of gradient-based optimization is helpful, but not a strict requirement.
 
-## Planning of the research project
+### Q&A Session
 
-1. kick-off meeting (Q3)
-2. research proposal presentations + collective evaluation requirements proposal (Q4 week 2)
-3. go/no-go presentations + collective benchmark available (Q4 week 4)
-4. deadline for receiving feedback on final draft (Q4 week 8)
+- Tuesday, March 8, 12:45-13:25
+- Wednesday, March 9, 12:45-13:25
 
-## References
+### References
