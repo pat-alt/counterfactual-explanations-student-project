@@ -1,7 +1,10 @@
 ---
 title: "Endogenous model shifts in algorithmic recourse"
-format: gfm
+format: 
+    gfm:
+        wrap: none
 bibliography: bib.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/elsevier-vancouver.csl
 ---
 
 Responsible Professor: Dr. Cynthia Liem
