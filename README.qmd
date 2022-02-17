@@ -61,7 +61,9 @@ For this assignment, prior experience is Python is a requirement. A basic unders
 
 ### Q&A Session
 
-- Tuesday, March 8, 12:45-13:25
-- Wednesday, March 9, 12:45-13:25
+If you're interested in this project and/or have follow-up questions, please feel free to join us through [Zoom]() on one of these two sessions:
+
+-   Tuesday, March 8, 12:45-13:25 (Zoom [link](https://us04web.zoom.us/j/77787187346?pwd=QFBh8Lc9iliVRzSSa9Yz9XFwZzUrXM.1))
+-   Wednesday, March 9, 12:45-13:25 (Zoom [link](https://us04web.zoom.us/j/77845264541?pwd=QoHXseljKn_PMTDawWFrhHPX7AUaua.1))
 
 ### References
